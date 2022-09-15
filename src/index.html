@@ -1,0 +1,319 @@
+<!DOCTYPE html><html lang="ru"><head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Croscan, кроссворды, сканворды, помощник в решении, ответы на вопросы сканворда,
+  поиск по маске, поиск по слову">
+  <meta name="description" content="Лучший помощник в решении кроссвордов и сканвордов.">
+  <meta name="author" content="https://github.com/Konnichiwaeien">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="">
+  <title>Croscan</title>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+
+
+
+
+
+
+<body class="main-container">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <h1 class="main-header__title  logo">
+        <span class="visually-hidden">Sitename</span>
+        <a class="logo__link" href="#" target="_blank">
+          <img class="logo__icon" src="img/logo.png" width="203" height="43" alt="logo">
+        </a>
+      </h1>
+      <p class="main-header__descr">
+        Лучший помощник в решении кроссвордов и сканвордов
+      </p>
+
+
+      <form class="main-header__form  form  form_search" action="#" method="get">
+        <p class="form__group">
+          <label class="form__label" for="search-mask">Поиск по маске</label>
+          <input class="form__field  form__search" type="search" name="search" id="search-mask">
+          <span class="form__capt">Поиск по маске</span>
+        </p>
+
+        <p class="form__group">
+          <label class="form__label" for="search-word">Поиск по слову</label>
+          <input class="form__field  form__search" type="search" name="word" id="search-word">
+          <span class="form__capt">Поиск по слову</span>
+        </p>
+
+        <p class="form__group">
+          <button class="form__btn  form__send  btn  btn_main" type="submit" aria-label="Поиск">
+            <svg class="form__icon  btn__icon" width="37" height="36" fill="#000" aria-hidden="true">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#loupe-small"></use>
+            </svg>
+          </button>
+        </p>
+      </form>
+    </div>
+  </header>
+
+
+
+
+
+
+  <main class="main">
+    <div class="main__wrapper">
+      <section class="main__info  info">
+        <h2 class="info__title">Как найти ответ на вопрос сканворда?</h2>
+        <div class="info__items">
+          <section class="info__item  info__item_spec">
+            <h3 class="info__item-title">Поиск по маске</h3>
+            <svg class="info__type" width="89" height="89" aria-hidden="true">
+              <use xlink:href="#loupe-mask"></use>
+            </svg>
+
+
+            <div class="info__content">
+              <p class="info__descr">
+                В базе представлена широкая область охвата от сложнейших химических соединений, до самых простых слов из
+                двух букв.
+              </p>
+
+              <p class="info__descr">
+                Для поиска слова по маске достаточно ввести ваш запрос в соответствующую строку, и за секунду вам будет
+                выдан самый релевантный вариант ответа.
+              </p>
+
+              <p class="info__descr">
+                Хотите сузить область поиска и у вас есть отгаданные буквы? Прекрасно, введите известные значения в строку
+                «Поиск по маске», а вместо неизвестных поставьте звездочки.
+              </p>
+
+              <p class="info__descr">
+                Например: «*Р**К*Й**», система автоматически подберет все слова с такими буквами. Вам останется лишь
+                выбрать подходящий вариант из предложенных.
+              </p>
+            </div>
+          </section>
+
+
+          <section class="info__item  info__item_spec  info__item_spec-word">
+            <h3 class="info__item-title">По слову</h3>
+            <svg class="info__type" width="89" height="89" aria-hidden="true">
+              <use xlink:href="#loupe-word"></use>
+            </svg>
+
+
+            <div class="info__content">
+              <p class="info__descr">
+                Если известен лишь сам вопрос, то введите его в строку «Поиск по определению», система автоматически
+                подберет все возможные варианты. Вы можете написать длинное определение или только его часть, поиск
+                все равно сделает свою работу.
+              </p>
+
+              <p class="info__descr">
+                В нашей базе находится более 150 000 вопросов с ответами. С каждым днем она становится все больше.
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+
+
+
+
+      <form class="main__form  form  form_search" action="#" method="get">
+        <p class="form__group">
+          <label class="form__label" for="search-word-main">Поиск по запросу</label>
+          <input class="form__field  form__search" type="search" name="word" id="search-word-main">
+          <span class="form__capt">Писатель</span>
+        </p>
+
+        <p class="form__group">
+          <label class="form__label" for="search-mask-main">Поиск по маске</label>
+          <input class="form__field  form__search" type="search" name="search" id="search-mask-main">
+          <span class="form__capt">Пу**ин</span>
+        </p>
+
+        <p class="form__group  form__group_send">
+          <button class="form__btn  form__send  btn  btn_main" type="submit" aria-label="Поиск">
+            <svg class="form__icon  btn__icon" width="20" height="20" fill="#000" aria-hidden="true">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#loupe-small"></use>
+            </svg>
+          </button>
+        </p>
+      </form>
+
+
+
+
+
+      <section class="main__search  search  search_requests">
+        <h2 class="search__title">Последние запросы</h2>
+        <div class="search__items">
+          <section class="search__item  search__item_spec">
+            <h3 class="search__item-title">Атавизм</h3>
+            <ul class="search__results">
+              <li class="search__result  search__result_spec">
+                биологический привет из прошлого
+              </li>
+            </ul>
+            <span class="search__quantity">5 результатов</span>
+          </section>
+
+
+          <section class="search__item">
+            <h3 class="search__item-title">Дура</h3>
+            <ul class="search__results">
+              <li class="search__result">пуля "с приветом"</li>
+              <li class="search__result">пуля "с приветом"</li>
+            </ul>
+            <span class="search__quantity">5 результатов</span>
+          </section>
+
+
+          <section class="search__item">
+            <h3 class="search__item-title">Алло</h3>
+            <ul class="search__results">
+              <li class="search__result">«привет» по телефону</li>
+              <li class="search__result">телефонный привет</li>
+            </ul>
+            <span class="search__quantity">5 результатов</span>
+          </section>
+        </div>
+
+
+        <aside class="search__banner"></aside>
+      </section>
+    </div>
+  </main>
+
+
+
+
+
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <p class="main-footer__logo  logo">
+        <a class="logo__link" href="#" target="_blank" aria-label="Sitename">
+          <img class="logo__icon  logo__icon_foot" src="img/logo-undefined.png" width="141" height="36" alt="logo">
+        </a>
+      </p>
+
+
+      <p class="main-footer__copyright">
+        <span class="main-footer__copyright-descr">© 2018 Copyright</span>
+        <a class="main-footer__copyright-link" href="#" target="_blank">Sitename</a>
+      </p>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <div class="visually-hidden">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="loupe-mask-grad-1" x1="0.751953" y1="0" x2="100.173" y2="13.3845" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="var(--primary-stop)"></stop>
+          <stop offset="1" stop-color="var(--second-stop)"></stop>
+        </linearGradient>
+        <linearGradient id="loupe-mask-grad-2" x1="23.9316" y1="22.5422" x2="53.3925" y2="24.3594" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="var(--primary-stop)"></stop>
+          <stop offset="1" stop-color="var(--second-stop)"></stop>
+        </linearGradient>
+        <linearGradient id="loupe-word-grad-1" x1="0.0800781" y1="0.986328" x2="99.5013" y2="14.3708" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="var(--primary-stop)"></stop>
+          <stop offset="1" stop-color="var(--second-stop)"></stop>
+        </linearGradient>
+        <linearGradient id="newspaper-grad" x1="28.8696" y1="73.5994" x2="117.121" y2="130.935" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#A7C0FF"></stop>
+          <stop offset="1" stop-color="#DB73FF" stop-opacity="0.5"></stop>
+        </linearGradient>
+        <linearGradient id="word-grad" x1="4.49328" y1="16.0029" x2="228.248" y2="16.6548" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#F6EEF9"></stop>
+          <stop offset="1" stop-color="#EBEBEB" stop-opacity="0.5"></stop>
+        </linearGradient>
+        <clipPath id="newspaper-mask">
+          <rect width="136.202" height="121.248" fill="#FFFFFF" transform="translate(0.00268555 73.4635) rotate(-32.4589)"></rect>
+        </clipPath>
+        <clipPath id="loupe-mask-clip">
+          <rect width="89" height="89" fill="#FFFFFF" transform="translate(0.751953)"></rect>
+        </clipPath>
+        <clipPath id="loupe-word-clip-1">
+          <rect width="89" height="89" fill="#FFFFFF" transform="translate(0.0800781 0.986328)"></rect>
+        </clipPath>
+      </defs>
+      <symbol id="loupe-mask">
+        <g clip-path="url(#loupe-mask-clip)">
+          <path d="M88.5352 76.9537L71.2045 59.623C70.4223 58.8408 69.3619 58.4062 68.2494 58.4062H65.416C70.2137 52.2701 73.0645 44.5521
+          73.0645 36.1562C73.0645 16.1834 56.8811 0 36.9082 0C16.9354 0 0.751953 16.1834 0.751953 36.1562C0.751953 56.1291 16.9354 72.3125
+          36.9082 72.3125C45.3041 72.3125 53.0221 69.4617 59.1582 64.6641V67.4975C59.1582 68.61 59.5928 69.6703 60.375 70.4525L77.7057
+          87.7832C79.3397 89.4172 81.9818 89.4172 83.5984 87.7832L88.5178 82.8639C90.1518 81.2299 90.1518 78.5877 88.5352 76.9537ZM36.9082
+          58.4062C24.6186 58.4062 14.6582 48.4633 14.6582 36.1562C14.6582 23.8666 24.6012 13.9062 36.9082 13.9062C49.1978 13.9062 59.1582
+          23.8492 59.1582 36.1562C59.1582 48.4459 49.2152 58.4062 36.9082 58.4062Z" fill="url(#loupe-mask-grad-1)"></path>
+          <path d="M39.2496 46.4582H34.5876L34.9576 38.3182L28.0756 42.6842L25.7816 38.6882L32.9596 34.9882L25.7816 31.2882L28.0756
+          27.2182L34.9576 31.5842L34.5876 23.4442H39.2496L38.8796 31.5842L45.6876 27.2182L48.0556 31.2882L40.8776 34.9882L48.0556
+          38.6882L45.6876 42.6842L38.8796 38.3182L39.2496 46.4582Z" fill="url(#loupe-mask-grad-2)"></path>
+        </g>
+      </symbol>
+      <symbol id="loupe-word">
+        <g clip-path="url(#loupe-word-clip-1)">
+          <path d="M87.8633 77.94L70.5326 60.6094C69.7504 59.8271 68.69 59.3926 67.5775 59.3926H64.7441C69.5418 53.2564 72.3926 45.5385
+          72.3926 37.1426C72.3926 17.1697 56.2092 0.986328 36.2363 0.986328C16.2635 0.986328 0.0800781 17.1697 0.0800781 37.1426C0.0800781
+          57.1154 16.2635 73.2988 36.2363 73.2988C44.6322 73.2988 52.3502 70.448 58.4863 65.6504V68.4838C58.4863 69.5963 58.9209 70.6566
+          59.7031 71.4389L77.0338 88.7695C78.6678 90.4035 81.31 90.4035 82.9266 88.7695L87.8459 83.8502C89.4799 82.2162 89.4799 79.574 87.8633
+          77.94ZM36.2363 59.3926C23.9467 59.3926 13.9863 49.4496 13.9863 37.1426C13.9863 24.8529 23.9293 14.8926 36.2363 14.8926C48.526
+          14.8926 58.4863 24.8355 58.4863 37.1426C58.4863 49.4322 48.5434 59.3926 36.2363 59.3926Z" fill="url(#loupe-word-grad-1)"></path>
+          <circle cx="23.6538" cy="37.6297" r="4.20536" fill="var(--third-stop)"></circle>
+          <circle cx="35.6692" cy="37.6297" r="4.20536" fill="var(--fourth-stop)"></circle>
+          <circle cx="47.6839" cy="37.6297" r="4.20536" fill="var(--fifth-stop)"></circle>
+        </g>
+      </symbol>
+      <symbol id="newspaper">
+        <g clip-path="newspaper-mask">
+          <path d="M118.273 16.1986L25.6948 75.0839C23.0502 76.7661 22.272 80.2767 23.9566 82.9253L24.9734 84.5238L16.9925 89.6002C14.3479
+          91.2823 13.5697 94.793 15.2543 97.4416L49.8245 151.792C53.7553 157.972 61.9443 159.8 68.1151 155.875L162.289 95.9742C167.578 92.6098
+          169.135 85.5885 165.765 80.2914L126.111 17.9485C124.427 15.2999 120.917 14.5165 118.273 16.1986ZM62.0145 146.283C61.5911 146.553
+          61.078 146.643 60.588 146.533C60.098 146.424 59.6712 146.124 59.4015 145.7L27.8817 96.1456L31.074 94.1151L62.5939 143.67C62.8635
+          144.094 62.954 144.607 62.8453 145.097C62.7367 145.588 62.4378 146.014 62.0145 146.283ZM107.068 113.136L76.7407 132.426C75.4185
+          133.267 73.6635 132.875 72.8213 131.551L71.8045 129.953C70.9622 128.629 71.3514 126.873 72.6736 126.032L103.001 106.742C104.323
+          105.901 106.078 106.293 106.92 107.617L107.937 109.215C108.779 110.54 108.39 112.295 107.068 113.136ZM148.568 86.7393L118.241
+          106.029C116.919 106.87 115.164 106.479 114.322 105.154L113.305 103.556C112.463 102.232 112.852 100.476 114.174 99.6351L144.501
+          80.3451C145.823 79.5041 147.578 79.8959 148.421 81.2201L149.437 82.8186C150.28 84.1428 149.89 85.8983 148.568 86.7393ZM94.8666
+          93.9537L64.5394 113.244C63.2172 114.085 61.4623 113.693 60.62 112.369L59.6033 110.77C58.761 109.446 59.1501 107.691 60.4724
+          106.85L90.7996 87.5596C92.1218 86.7185 93.8767 87.1103 94.719 88.4345L95.7357 90.033C96.578 91.3572 96.1889 93.1127 94.8666
+          93.9537ZM136.367 67.5569L106.04 86.8469C104.718 87.6879 102.963 87.2961 102.12 85.972L101.104 84.3734C100.261 83.0492 100.651
+          81.2937 101.973 80.4527L132.3 61.1627C133.622 60.3217 135.377 60.7134 136.219 62.0376L137.236 63.6362C138.078 64.9604 137.689
+          66.7158 136.367 67.5569ZM124.166 48.3744L52.3382 94.0613C51.016 94.9023 49.2611 94.5106 48.4188 93.1864L43.335 85.1937C42.4927
+          83.8695 42.8818 82.114 44.2041 81.273L116.032 35.5861C117.354 34.7451 119.109 35.1369 119.951 36.4611L125.035 44.4537C125.877
+          45.7779 125.488 47.5334 124.166 48.3744Z" fill="url(#newspaper-grad)" fill-opacity="0.15"></path>
+        </g>
+      </symbol>
+      <symbol id="word">
+        <path d="M65.6084 1.40131L52.3264 42.0013H42.2344L33.3024 14.5093L24.0804 42.0013H14.0464L0.70642 1.40131H10.4504L19.6144
+        29.9373L29.1844 1.40131H37.8844L47.1644 30.1693L56.6184 1.40131H65.6084ZM90.006 42.6973C85.7914 42.6973 81.9827 41.7886 78.58
+        39.9713C75.216 38.154 72.5674 35.66 70.634 32.4893C68.7394 29.28 67.792 25.684 67.792 21.7013C67.792 17.7186 68.7394 14.142 70.634
+        10.9713C72.5674 7.76198 75.216 5.24864 78.58 3.43131C81.9827 1.61398 85.7914 0.705312 90.006 0.705312C94.2207 0.705312 98.01 1.61398
+        101.374 3.43131C104.738 5.24864 107.387 7.76198 109.32 10.9713C111.253 14.142 112.22 17.7186 112.22 21.7013C112.22 25.684 111.253
+        29.28 109.32 32.4893C107.387 35.66 104.738 38.154 101.374 39.9713C98.01 41.7886 94.2207 42.6973 90.006 42.6973ZM90.006 34.6933C92.4034
+        34.6933 94.5687 34.152 96.502 33.0693C98.4354 31.948 99.9434 30.4013 101.026 28.4293C102.147 26.4573 102.708 24.2146 102.708
+        21.7013C102.708 19.188 102.147 16.9453 101.026 14.9733C99.9434 13.0013 98.4354 11.474 96.502 10.3913C94.5687 9.26998 92.4034 8.70931
+        90.006 8.70931C87.6087 8.70931 85.4434 9.26998 83.51 10.3913C81.5767 11.474 80.0494 13.0013 78.928 14.9733C77.8454 16.9453 77.304
+        19.188 77.304 21.7013C77.304 24.2146 77.8454 26.4573 78.928 28.4293C80.0494 30.4013 81.5767 31.948 83.51 33.0693C85.4434 34.152
+        87.6087 34.6933 90.006 34.6933ZM145.15 42.0013L137.32 30.6913H136.856H128.678V42.0013H119.282V1.40131H136.856C140.452 1.40131 143.564
+        2.00064 146.194 3.19931C148.862 4.39798 150.911 6.09931 152.342 8.30331C153.772 10.5073 154.488 13.1173 154.488 16.1333C154.488
+        19.1493 153.753 21.7593 152.284 23.9633C150.853 26.1286 148.804 27.7913 146.136 28.9513L155.242 42.0013H145.15ZM144.976
+        16.1333C144.976 13.852 144.241 12.112 142.772 10.9133C141.302 9.67598 139.156 9.05731 136.334 9.05731H128.678V23.2093H136.334C139.156
+        23.2093 141.302 22.5906 142.772 21.3533C144.241 20.116 144.976 18.376 144.976 16.1333ZM161.932 1.40131H180.376C184.784 1.40131 188.67
+        2.25198 192.034 3.95331C195.437 5.61598 198.066 7.97464 199.922 11.0293C201.817 14.084 202.764 17.6413 202.764 21.7013C202.764 25.7613
+        201.817 29.3186 199.922 32.3733C198.066 35.428 195.437 37.806 192.034 39.5073C188.67 41.17 184.784 42.0013 180.376
+        42.0013H161.932V1.40131ZM179.912 34.2873C183.972 34.2873 187.201 33.166 189.598 30.9233C192.034 28.642 193.252 25.568 193.252
+        21.7013C193.252 17.8346 192.034 14.78 189.598 12.5373C187.201 10.256 183.972 9.11531 179.912 9.11531H171.328V34.2873H179.912Z" fill="url(#word-grad)"></path>
+      </symbol>
+    </svg>
+  </div>
+  <script src="js/main.min.js"></script>
+</body></html>

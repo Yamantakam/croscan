@@ -1,0 +1,31 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  transition: @primary-tr;
+}
+
+.btn__icon {
+  transition: @primary-tr;
+}
+
+.btn_main {
+  border-radius: 3px;
+  background: @btn-main-bg;
+  &:hover,
+  &:focus {
+    background: desaturate(darken(@btn-main-bg, 10%), 10%);
+    .btn__icon {
+      fill: desaturate(darken(@WHITE, 10%), 10%);
+    }
+  }
+  &:active {
+    background: desaturate(darken(@btn-main-bg, 20%), 20%);
+    .btn__icon {
+      fill: desaturate(darken(@WHITE, 20%), 20%);
+    }
+  }
+}

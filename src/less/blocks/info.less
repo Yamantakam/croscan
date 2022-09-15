@@ -1,0 +1,142 @@
+.info {
+  padding-top: 38px;
+}
+
+.info__title {
+  margin-bottom: 29px;
+  color: @title-big-color;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  text-align: center;
+}
+
+.info__item {
+  position: relative;
+  margin-bottom: 35px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &_spec,
+  &_spec-word {
+    &::after {
+      .def-pseudo();
+      position: absolute;
+      .align(horizont);
+      bottom: -90px;
+      z-index: -1;
+      width: 100%;
+      max-width: 510px;
+      height: 104px;
+      background-image: url("../img/sprite.svg#word");
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &_spec-word {
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.info__item-title {
+  margin-bottom: 15px;
+  padding-left: 26px;
+  color: @title-medium-color;
+  .font(full; 21px; 25px; @primary-ff; 600);
+  letter-spacing: 1.05px;
+}
+
+.info__type {
+  position: absolute;
+  top: -1px;
+  right: 29px;
+  z-index: -1;
+}
+
+.info__content {
+  padding: 34px 26px 34px 26px;
+  border-radius: 3px;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05);
+  background-color: @second-bg;
+  color: #1f1f1f;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+}
+
+.info__descr {
+  margin-bottom: 18px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+
+
+@media @desktop-width {
+  .info {
+    padding-top: 31px;
+    padding-bottom: 35px;
+  }
+
+  .info__title {
+    margin-bottom: 23px;
+    font-size: 32px;
+    letter-spacing: 1.6px;
+  }
+
+  .info__items {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .info__item {
+    width: 48.5%;
+    margin-bottom: 0;
+
+    &_spec {
+      &::after {
+        content: none;
+      }
+    }
+
+    &_spec-word {
+      position: relative;
+
+      &::after {
+        .def-pseudo();
+        bottom: 0;
+        left: 0;
+        transform: none;
+      }
+    }
+  }
+
+  .info__item-title {
+    font-size: 32px;
+    letter-spacing: 1.6px;
+  }
+
+  .info__type {
+    top: 0;
+    right: 0;
+  }
+
+  .info__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 19px;
+  }
+
+  .info__descr {
+    margin-bottom: 21px;
+  }
+}

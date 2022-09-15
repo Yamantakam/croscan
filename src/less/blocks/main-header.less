@@ -1,0 +1,242 @@
+@media(max-width: 340px) {
+  .main-header {
+    padding: 0 20px;
+  }
+}
+
+
+
+.main-header {
+  min-height: 100vh;
+  padding: 0 33px;
+  box-shadow: 0 1px 15px @primary-shadow;
+  background: @main-bg;
+  color: @second-color;
+}
+
+.main-header__wrapper {
+  .container();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.main-header__title {
+  margin-bottom: 13px;
+}
+
+.main-header__icon {
+  width: 203px;
+  height: 43px;
+}
+
+.main-header__descr {
+  align-self: center;
+  max-width: 400px;
+  margin-bottom: 47px;
+  .font(shortest; 21px; 34px);
+  letter-spacing: 1.89px;
+}
+
+.main-header__toggle {
+  padding: 8px 20px;
+}
+
+.main-header__toggle-icon{
+  fill: @second-bg;
+}
+
+
+
+.main-header_inner {
+  min-height: auto;
+  padding: 11px 33px;
+  background:
+      url(../img/meteors.svg) repeat-x 260px 0,
+      @main-bg;
+
+  .main-header__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: auto;
+  }
+
+  .main-header__title {
+    margin-bottom: 0;
+  }
+
+  .main-header__icon {
+    width: 203px;
+    height: 43px;
+  }
+
+  .main-header__descr {
+    display: none;
+  }
+
+  .main-header__form {
+    display: none;
+    opacity: 0;
+    transition: 0.5s linear;
+
+    @media @mobile-width-only {
+      &_opened {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100vw;
+        max-width: 100%;
+        min-height: 100vh;
+        padding: 0 33px;
+        background: @main-bg;
+        transition: 0.3s linear;
+        transition: 0.3s ease-in;
+        .form__capt {
+          top: 43px;
+        }
+      }
+
+      &_obvious {
+        opacity: 1;
+        transition: 0.5s linear;
+      }
+    }
+  }
+  
+  .main-header__toggle_opened {
+    position: fixed;
+    top: 17.5px;
+    right: 33px;
+    z-index: 11;
+    width: 61px;
+    height: 37px;
+
+    .main-header__toggle-icon {
+      display: none;
+    }
+
+    &::before,
+    &::after {
+      .def-pseudo();
+      top: 15px;
+      left: 18px;
+      width: 27px;
+      height: 4px;
+      background: @second-bg;
+      transition: @primary-tr;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover,
+    &:focus {
+      &::before,
+      &::after {
+        background: darken(@second-bg, 20%);
+      }
+    }
+
+    &:active {
+      &::before,
+      &::after {
+        background: darken(@second-bg, 40%);
+      }
+    }
+  }
+}
+
+
+
+@media @desktop-width {
+  .main-header {
+    min-height: auto;
+    height: auto;
+    padding: 20px 0;
+    background:
+      url(../img/meteors.svg) repeat-x 200px 0,
+      @main-bg;
+  }
+
+  .main-header__wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: auto;
+  }
+
+  .main-header__title {
+    margin: 0 47px 0 0;
+  }
+
+  .main-header__icon {
+    width: 203px;
+    height: 43px;
+  }
+
+  .main-header__descr {
+    align-self: auto;
+    max-width: 300px;
+    height: 52px;
+    margin-bottom: 0;
+    .font(shortest; @primary-fs; 26px);
+    letter-spacing: 1.44px;
+    text-align: left;
+  }
+
+  .main-header .main-header__form {
+    display: none;
+  }
+
+
+
+  .main-header_inner {
+    padding-top: 20px;
+
+    .main-header__wrapper {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .main-header__form {
+      position: static;
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: wrap;
+      width: auto;
+      height: auto;
+      min-height: auto;
+      padding: 0;
+      padding-top: 7px;
+      opacity: 1;
+    }
+
+    .main-header__toggle {
+      display: none;
+    }
+  }
+}
+
+
+
+@media(min-width: 1100px) {
+  .main-header_inner {
+    .main-header__descr {
+      display: block;
+      margin-right: 30px;
+    }
+  }
+}

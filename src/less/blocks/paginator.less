@@ -1,0 +1,36 @@
+@media(max-width: 330px) {
+  .paginator__item {
+    margin: 0 5px;
+  }
+}
+
+
+
+.paginator {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.paginator__item {
+  margin: 0 8px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.paginator__link {
+  display: block;
+  padding: 5px 14px;
+  border-radius: 3px;
+  color: @second-color;
+  font-size: 17px;
+  font-weight: 700;
+  &:hover,
+  &:focus {
+    color: fade(@second-color, 70%);
+  }
+  &:active {
+    color: fade(@second-color, 50%);
+  }
+}

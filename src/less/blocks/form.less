@@ -1,0 +1,155 @@
+.form_search {
+  .form__group {
+    position: relative;
+  }
+
+  .form__label {
+    .visually-hidden();
+  }
+
+  .form__field,
+  .form__btn {
+    .font(full; 22px; @primary-lh; @primary-ff; @primary-fw);
+  }
+
+  .form__field,
+  .form__btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 22px 10px;
+    border-radius: 3px;
+    transition: @primary-tr;
+  }
+
+  .form__field {
+    border: 2px solid transparent;
+    background: @second-bg;
+    &:hover,
+    &:focus {
+      border-color: @border-main;
+    }
+  }
+
+  .form__btn {
+    display: flex;
+  }
+
+  .form__icon {
+    fill: @second-bg;
+  }
+
+  .form__capt {
+    position: absolute;
+    .align(all);
+    opacity: 1;
+    color: #c4c4c4;
+    will-change: opacity;
+    transition: @primary-tr;
+    pointer-events: none;
+    &--full {
+      opacity: 0;
+    }
+  }
+}
+
+
+
+@media(min-width: 420px) {
+  .form__capt {
+    font-size: @primary-fs;
+  }
+}
+
+
+
+@media @desktop-width {
+  .form_search {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px 25px 20px 25px;
+    border-radius: 3px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
+    background: @form-bg;
+
+    .form__group {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      max-width: 300px;
+      margin-bottom: 0;
+      &:first-of-type {
+        order: 1;
+        margin-right: 0;
+      }
+
+      &_send {
+        width: 7.5%;
+        max-width: 80px;
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+    }
+
+    .form__label {
+      position: static;
+      order: 1;
+      width: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      clip: auto;
+      clip-path: none;
+      color: @second-color;
+      white-space: normal;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .form__field,
+    .form__send {
+      margin-bottom: 6px;
+      padding: 7px 10px;
+    }
+
+    .form__send {
+      padding: 15px;
+    }
+
+    .form__capt {
+      top: 27px;
+    }
+  }
+}
+
+
+
+@media @desktop-width {
+  .form_search.form_inner {
+    box-shadow: none;
+    background: transparent;
+
+    .form__group {
+      &_send {
+        width: 10%;
+        margin-left: 3%;
+        margin-right: 3%;
+      }
+    }
+
+    .form__field {
+      padding: 3px 10px;
+    }
+
+    .form__send {
+      padding: 11px 15px;
+    }
+
+    .form__capt {
+      top: 20px;
+      font-size: 12px;
+    }
+  }
+}
